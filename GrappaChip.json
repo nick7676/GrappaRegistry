@@ -1,0 +1,14 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "GrappaChip",
+  "title": "Grappa Chip",
+  "description": "esempio",
+  "files": [
+    {
+      "path": "src/components/ui/GrappaChip.tsx",
+      "content": "import * as React from \"react\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\nimport { cn } from \"@/lib/utils\";\n\nconst chipVariants = cva(\n  \"rounded-md py-0.5 px-2.5 border text-sm transition-all shadow-sm w-fit\",\n  {\n    variants: {\n      variant: {\n        default: \"bg-slate-800 text-white border-transparent\",\n        success: \"bg-green-600 text-white border-green-700\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n    },\n  }\n);\n\nexport interface ChipProps\n  extends React.ComponentProps<\"div\">,\n    VariantProps<typeof chipVariants> {}\n\nfunction Chip({ className, variant, ...props }: ChipProps) {\n  return (\n    <div\n      data-slot=\"chip\"\n      className={cn(chipVariants({ variant }), className)}\n      {...props}\n    />\n  );\n}\n\nexport { Chip };\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}
