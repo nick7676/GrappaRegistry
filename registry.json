@@ -1,15 +1,14 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "acme",
-  "homepage": "https://acme.com",
+  "homepage": "https://github.com/nick7676/GrappaRegistry",
   "items": [
     {
         "name" : "GrappaCard",
-        "type" : "registry:block",
         "title" : "Card",
         "files" : [
             {
-                "path" : "src/components/ui/GrappaCard.tsx",
+                "path" : "GrappaCard.json",
                 "type" : "registry:component"
             }
         ]
