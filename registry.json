@@ -1,8 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "acme",
-  "homepage": "https://acme.com",
-  "type": "registry",
+  "name": "grappa",
+  "homepage": "https://github.com/nick7676/GrappaRegistry",
   "items": [
     {
       "name": "grappa-card",
