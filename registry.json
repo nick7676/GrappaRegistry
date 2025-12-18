@@ -25,6 +25,18 @@
           "type": "registry:component"
         }
       ]
+    },
+    {
+      "name": "GrappaButton",
+      "type": "registry:block",
+      "title": "Grappa button",
+      "dependencies": ["lucide-react"],
+      "files": [
+        {
+          "path": "src/components/ui/GrappaButton.tsx",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
