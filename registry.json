@@ -4,14 +4,15 @@
   "homepage": "https://github.com/nick7676/GrappaRegistry",
   "items": [
     {
-        "name" : "GrappaCard",
-        "title" : "Card",
-        "files" : [
-            {
-                "path" : "GrappaCard.json",
-                "type" : "registry:component"
-            }
-        ]
+      "name": "GrappaCard",
+      "type": "registry:block",
+      "title": "Card",
+      "files": [
+        {
+          "path": "GrappaCard.json",
+          "type": "registry:component"
+        }
+      ]
     }
   ]
 }
