@@ -1,11 +1,11 @@
 {
-  "$schema": "https://ui.shadcn.com/schema/registry.json",
-  "name": "grappa",
-  "homepage": "https://github.com/nick7676/GrappaRegistry",
-  "items": [
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "grappa-card",
+  "type": "registry:ui",
+  "files": [
     {
-      "name": "grappa-card",
-      "path": "grappa-card.json"
+      "path": "components/grappa-card.tsx",
+      "content": "import * as React from \"react\";\n\nexport function GrappaCard() {\n  return <div>Grappa 🍇</div>;\n}\n"
     }
   ]
 }
