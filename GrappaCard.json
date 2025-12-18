@@ -1,0 +1,13 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "GrappaCard",
+  "title": "Card",
+  "files": [
+    {
+      "path": "src/components/ui/GrappaCard.tsx",
+      "content": "import * as React from \"react\";\n\nimport { cn } from \"@/lib/utils\";\n\nfunction Card({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card\"\n      className={cn(\n        \"bg-card text-card-foreground flex flex-col gap-6 rounded-xl border py-6 shadow-sm w-80 shadow-emerald-100 shadow-md shadow-xl mx-auto border-1 border-emerald-100\",\n        className\n      )}\n      {...props}\n    />\n  );\n}\n\nfunction CardHeader({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-header\"\n      className={cn(\"border-b-4 font-serif text-center pb-5\", className)}\n      {...props}\n    />\n  );\n}\n\nfunction CardDescription({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-description\"\n      className={cn(\"font-mono pr-2 pl-2\", className)}\n      {...props}\n    />\n  );\n}\n\nfunction CardFooter({ className, ...props }: React.ComponentProps<\"div\">) {\n  return (\n    <div\n      data-slot=\"card-footer\"\n      className={cn(\"border-t-4 border-lime-100 bg-lime-100\", className)}\n      {...props}\n    />\n  );\n}\n\nexport { Card, CardHeader, CardDescription, CardFooter };\n",
+      "type": "registry:component"
+    }
+  ],
+  "type": "registry:block"
+}
